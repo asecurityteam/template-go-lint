@@ -4,7 +4,7 @@ run:
   tests: true
   skip-dirs:
     - .coverage
-  #Any go file with "#+ build integration" in first line won't be linted
+  #Linter won't check files with build tags (like +build integration) unless you list them under build-tags here.
   build-tags:
     - integration
 output:
